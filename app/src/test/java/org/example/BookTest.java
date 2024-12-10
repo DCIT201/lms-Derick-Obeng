@@ -8,9 +8,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
     @Test void testBookConstructor() {
-        Book book = new Book("1984", "George Orwell", 1949);
-        assertEquals("1984", book.getTitle());
+        Book book = new Book("Animal Farm", "George Orwell", "1234567890");
+        assertEquals("Animal Farm", book.getTitle());
         assertEquals("George Orwell", book.getAuthor());
-        assertEquals(1949, book.getYearPublished());
+        assertEquals("1234567890", book.getYearPublished());
     }
 }
